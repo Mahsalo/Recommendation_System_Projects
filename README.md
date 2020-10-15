@@ -21,7 +21,7 @@ Recommendation systems are used to predict what items might a user be interested
   * Fixing the matrix U and solving for V
   * Fixing the matrix V and solving for U
   
-![pic1](https://github.com/Mahsalo/RecommendationSystem/tree/main/images/formula1.png?raw=true)
+!(https://drive.google.com/file/d/1jGv9ZUD14e8dOYmjKcyrEog4Cu_EKXq6/view?usp=sharing)
 
 # Recommender Systems Implementations: 
 
