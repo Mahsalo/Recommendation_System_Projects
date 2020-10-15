@@ -20,7 +20,7 @@ Recommendation systems are used to predict what items might a user be interested
 * In ALS, the optimization problem would be **iterative** and it wouold be alternating between:
   * Fixing the matrix U and solving for V
   * Fixing the matrix V and solving for U
-![GitHub Logo](/images/formula1.png)
+![GitHub Logo](../images/formula1.png)
 # Recommender Systems Implementations: 
 
 https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7194191126325765/1471038362177880/6285802778455178/latest.html
