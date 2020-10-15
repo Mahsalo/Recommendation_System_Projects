@@ -32,6 +32,17 @@ https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93e
 * Retailrocket dataset has 2,756,101 events including 2,664,312 views, 69,332 add-to-carts and 22,457 transactions produced by 1,407,580 unique visitors.
 We have just used one of the datasets which is called "events.csv" and it has 5 columns: timestamp, visitor id, event, timeid and transaction id.
 
+* The necessary steps towards solving recommender system problem are as following:
 
+1. Data Wrangling and Pre-processing:  Since we have raw data lots of data wrangling and preprocessing is needed such as removing the unnecessary columns like timestamp, counting the number of the "views", "transactions" and "add-to-carts", casting the datatype to an appropriate one, removing the NaN and NULL values. The dataframes are also changed into RDD (Resilient Distributed Datasets) which is the default for the big data analysis in Spark since it makes the parallel computations faster.
+
+2. Randomly splitting the dataset into training, validation and test (60%,20%,20%).
+
+3. Defining the evaluation function that computes the RMSE for predicted and actual ratings.
+
+4. Finding the best **rank** in the ALS algorithm. The rank shows the number of the latent/hidden factors and it depends on the data. The higher the value of rank the better the predictions BUT it might cause *overfitting* and it will consume more time and memory so finding the best rank is important. 
+We can start with ranks 5-10 and then increase it to get a better performance. The best rank is 20 according to the limited computing resources (clusters) on free trail DataBricks account.
+
+5. I have re-defined the *rating* for this problem in order to consider the behaviors of the users. In other words, if the user does not do anything about the item (not interested) the weight/rating is 1, if he just views the item the weight/rating is 2, if he adds the item to his cart the weight is 3 but if he buys the item the weight/rating is set to 5. 
 
 
