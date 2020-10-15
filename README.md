@@ -6,13 +6,22 @@ Recommendation systems are used to predict what items might a user be interested
 * There are different methods to fill-out this sparse matrix: 
   1. Content Based Approach
   2. Collaborative Filtering
-     1. Model-Based method --> Matrix Factorization
-     2. Memory-Based method 
-     3. Hybrid
+  
+     * Model-Based method --> Matrix Factorization
+     * Memory-Based method 
+     * Hybrid
+     
+* In matrix factorization method, the utility/feedback matrix would be estimated by the multiplication of two matrices corresponding to the items and users, separately. 
+* The unknown values in the U and V matrices corresponding to the users and items, respectively, would be estimated by minimizing the distance between their multiplication with the feedback matrix.
+* Optimizing the objective function could be done using:
+  * SVD
+  * SGD (Stochastic Gradient Descent), slower convergence compared to WALS
+  * WALS (Weighted Alternating Least Square)
+* In ALS, the optimization problem would be **iterative** and it wouold be alternating between:
+  * Fixing the matrix U and solving for V
+  * Fixing the matrix V and solving for U
 
-
-
-
+# Recommender Systems Implementations: 
 
 https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7194191126325765/1471038362177880/6285802778455178/latest.html
 
