@@ -24,8 +24,9 @@ Recommendation systems are used to predict what items might a user be interested
 ![ddd](https://drive.google.com/file/d/1jGv9ZUD14e8dOYmjKcyrEog4Cu_EKXq6/view?usp=sharing)
 
 # Recommender Systems Implementations: 
-
-https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7194191126325765/1471038362177880/6285802778455178/latest.html
+1. Retailrocket recommender system dataset: I have designed a recommender system based on the "event.csv" file of this dataset which is collected from an ecommerce website. This file contains the behavior data of users of an ecommerce website. We would like to predict the future behavior of users for specific items based on their previous behaviors towards different items. These behaviors include: viewing the item, adding to cart and placing an order.
+2. I have used Pyspark (A Python API that supports Spark for the big data analysis) and implemented the recommneder algorithm on *Data Bricks* clusters.
+![link](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7194191126325765/1471038362177880/6285802778455178/latest.html)
 
 
 
