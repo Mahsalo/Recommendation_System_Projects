@@ -1,4 +1,4 @@
-# RecommendationSystem
+# Recommendation System
 
 Recommendation systems are used to predict what items might a user be interested in. For example, it could tell us what movies a user might like based on his previous choices, or what rating would he give to a specific movie based on his previous ratings to similar movies. 
 
