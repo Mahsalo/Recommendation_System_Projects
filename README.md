@@ -23,7 +23,7 @@ Recommendation systems are used to predict what items might a user be interested
 
 # Recommender Systems Implementations: 
 
-(https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7194191126325765/1471038362177880/6285802778455178/latest.html)
+[https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7194191126325765/1471038362177880/6285802778455178/latest.html]
 
 
 
