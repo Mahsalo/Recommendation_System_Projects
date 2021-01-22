@@ -2,6 +2,10 @@
 
 Recommendation systems are used to predict what items might a user be interested in. For example, it could tell us what movies a user might like based on his previous choices, or what rating would he give to a specific movie based on his previous ratings to similar movies. 
 
+- Recommendation systems could be also used to suggest ussers for items which is called "targetting" in the marketting.
+- Recommendation systems are use for the personalization of the users and items.
+
+
 * In general, the item-user matrix or the **utility/feedback matrix** is a sparse matrix that needs to be filled with ratings.
 * There are different methods to fill-out this sparse matrix: 
   1. Content Based Approach
