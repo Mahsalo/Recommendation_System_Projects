@@ -8,7 +8,7 @@ Recommendation systems are used to predict what items might a user be interested
 
 * In general, the item-user matrix or the **utility/feedback matrix** is a sparse matrix that needs to be filled with ratings.
 * There are different methods to fill-out this sparse matrix: 
-  1. Content Based Approach
+  1. Content Based Approach: In this method, we have the meta data about the content, for example we know that a specific user likes a specific group of items so we recommend her the most popular item in that group.
   2. Collaborative Filtering
   
      * Model-Based method --> Matrix Factorization
