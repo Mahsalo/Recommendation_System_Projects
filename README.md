@@ -9,11 +9,14 @@ Recommendation systems are used to predict what items might a user be interested
 * In general, the item-user matrix or the **utility/feedback matrix** is a sparse matrix that needs to be filled with ratings.
 * There are different methods to fill-out this sparse matrix: 
   1. Content Based Approach: In this method, we have the meta data about the content, for example we know that a specific user likes a specific group of items so we recommend her the most popular item in that group.
-  2. Collaborative Filtering
+  2. Collaborative Filtering: In this method we don't need a metadata and we just have the interactions matrix.
   
      * Model-Based method --> Matrix Factorization
      * Memory-Based method 
      * Hybrid
+  3. Knowledge-based
+  
+  4. If we have both the interactions matrix and the metadata we can use the hybrid method by combining all 3 types of recommendation systems and use NNETs.    
      
 * In matrix factorization method, the utility/feedback matrix would be estimated by the multiplication of two matrices corresponding to the items and users, separately. 
 * The unknown values in the U and V matrices corresponding to the users and items, respectively, would be estimated by minimizing the distance between their multiplication with the feedback matrix.
