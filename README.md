@@ -13,10 +13,10 @@ Recommendation systems are used to predict what items might a user be interested
   
      * Model-Based method --> Matrix Factorization
      * Memory-Based method 
-     * Hybrid
+ 
   3. Knowledge-based
   
-  4. If we have both the interactions matrix and the metadata we can use the hybrid method by combining all 3 types of recommendation systems and use NNETs.    
+  4. If we have both the interactions matrix and the metadata we can use the hybrid method by combining all 3 types of recommendation systems and use NNETs (Hybrid model like YouTube).    
      
 * In matrix factorization method, the utility/feedback matrix would be estimated by the multiplication of two matrices corresponding to the items and users, separately. 
 * The unknown values in the U and V matrices corresponding to the users and items, respectively, would be estimated by minimizing the distance between their multiplication with the feedback matrix.
