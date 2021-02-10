@@ -6,10 +6,10 @@ Recommendation systems are used to predict what items might a user be interested
 - Recommendation systems are use for the personalization of the users and items.
 
 
-* In general, the item-user matrix or the **utility/feedback matrix** is a sparse matrix that needs to be filled with ratings.
+* In general, the item-user matrix or the **utility/feedback matrix** is a **sparse matrix** that needs to be filled with ratings.
 * There are different methods to fill-out this sparse matrix: 
-  1. Content Based Approach: In this method, we have the meta data about the content, for example we know that a specific user likes a specific group of items so we recommend her the most popular item in that group.
-  2. Collaborative Filtering: In this method we don't need a metadata and we just have the interactions matrix.
+  1. Content Based Approach: In this method, we have the meta data about the content, for example we know that a specific user likes a specific group of items so we recommend her the most popular item in that group (based on properties of the items). This requires hand-engineering features.
+  2. Collaborative Filtering: In this method we don't need a metadata and we just have the interactions matrix. Similar users like similar items. This method would have automatic feature engineering.
   
      * Model-Based method --> Matrix Factorization
      * Memory-Based method 
@@ -24,7 +24,7 @@ Recommendation systems are used to predict what items might a user be interested
   * SVD
   * SGD (Stochastic Gradient Descent), slower convergence compared to WALS
   * WALS (Weighted Alternating Least Square)
-* In ALS, the optimization problem would be **iterative** and it wouold be alternating between:
+* In ALS, the optimization problem would be **iterative** and it would be alternating between:
   * Fixing the matrix U and solving for V
   * Fixing the matrix V and solving for U
   
