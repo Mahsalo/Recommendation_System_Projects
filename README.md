@@ -30,6 +30,13 @@ Recommendation systems are used to predict what items might a user be interested
   
 ![ALS Formula](https://drive.google.com/file/d/1jGv9ZUD14e8dOYmjKcyrEog4Cu_EKXq6/view?usp=sharing?raw=true)
 
+# Some Pitfalls:
+1. Sparse rating matrix
+2. Skewed rating matrix since some of the items might be more popular or some users just like/hate everything.
+3. Maybe a new item is added and there is no info. about it.
+4. Lack of explicit ratings about an item so we should rely on the implicit information/user feedback. 
+5. Cold start problem:
+
 # Recommender Systems Implementations: 
 * Retailrocket recommender system dataset: I have designed a recommender system based on the "event.csv" file of this dataset which is collected from an ecommerce website. This file contains the behavior data of users of an ecommerce website. We would like to predict the future behavior of users for specific items based on their previous behaviors towards different items. These behaviors include: viewing the item, adding to cart and placing an order.
 * I have used Pyspark (A Python API that supports Spark for the big data analysis) and implemented the recommneder algorithm on *Data Bricks* clusters.
