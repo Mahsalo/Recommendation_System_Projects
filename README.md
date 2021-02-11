@@ -35,7 +35,7 @@ Recommendation systems are used to predict what items might a user be interested
 2. Skewed rating matrix since some of the items might be more popular or some users just like/hate everything.
 3. Maybe a new item is added and there is no info. about it.
 4. Lack of explicit ratings about an item so we should rely on the implicit information/user feedback. 
-5. Cold start problem:
+5. Cold start problem: Visitor cold start and product cold start, It happens when there is a new visitor/user or a new product without any data.
 
 
 # Recommender Systems Implementations: 
