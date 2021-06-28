@@ -21,9 +21,11 @@ Recommendation systems are used to predict what items might a user be interested
 * In matrix factorization method, the utility/feedback matrix would be estimated by the multiplication of two matrices corresponding to the items and users, separately. 
 * The unknown values in the U and V matrices corresponding to the users and items, respectively, would be estimated by minimizing the distance between their multiplication with the feedback matrix.
 * Optimizing the objective function could be done using:
-  * SVD (Consider the feedback matrix factorized as the multiplication of users-factors and items-factors matrices)
+  * SVD (Consider the feedback matrix factorized as the multiplication of users-factors and items-factors matrices). SVD would be minimizing the RMSE which is awesome BUT it sums in terms of ALL values but we have missing values!
   * SGD (Stochastic Gradient Descent), slower convergence compared to WALS
-  * WALS (Weighted Alternating Least Square)
+  * WALS (Weighted Alternating Least Square), this is the same as the SVD method but we are just summing over the known values so the distance between the multiplaction of two unknown matrices and the feedback matrix is computed only over the known values.
+
+* **Important**: The rank in WALS shows the number of the factors/features that we want to find for user-factor and item-factor matrices. But we don't know this number so. we start with an initial value and then we can tune it for better predictions.
 * In ALS, the optimization problem would be **iterative** and it would be alternating between:
   * Fixing the matrix U and solving for V
   * Fixing the matrix V and solving for U
