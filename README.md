@@ -38,6 +38,7 @@ Recommendation systems are used to predict what items might a user be interested
 3. Maybe a new item is added and there is no info. about it.
 4. Lack of explicit ratings about an item so we should rely on the implicit information/user feedback. 
 5. Cold start problem: Visitor cold start and product cold start, It happens when there is a new visitor/user or a new product without any data.
+Cold start problem might be caused by new item and/or new user added to the dataset or even at the start of forming the problem whne there are no ratings (new community). To solve this problem, it's better to use a hybrid model (content_based for cold start and collaborative filtering for warm start). Many different methods exist for solving this problem.
 
 
 # Recommender Systems Implementations: 
